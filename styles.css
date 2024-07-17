@@ -1,0 +1,345 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.btn-ornage{
+    background-color: orange;
+}
+
+/* =========================================================================================================================== */
+
+
+
+.nav {
+    position: sticky;
+    top: 0%;
+    padding: 1rem 0;
+    background-color: #051922;
+    z-index: 99;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav .nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav .nav-links ul li {
+    padding: 0 1rem;
+}
+
+.nav .nav-links ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav .nav-links ul li a:hover {
+    color: orange;
+}
+
+.nav .nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+.nav .nav-icons a i{color: white;}
+.nav .nav-icons a:hover i{color: orange;}
+
+/* =========================================================================================================================== */
+
+.showcase {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.392), rgba(31, 31, 31, 0.523)), url("https://images.pexels.com/photos/2008135/pexels-photo-2008135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase .showcase-text {
+   text-align: center;
+    color: white;
+}
+.showcase .showcase-text p {
+    text-align: center;
+    font-size: 1.5rem;
+     color: whitesmoke;
+     padding-bottom: 1rem;
+ }
+ .showcase .showcase-text h2 {
+    text-align: center;
+    font-size: 4rem;
+     color: whitesmoke;
+ }
+ .showcase .showcase-text .showcase-btn{display: flex; align-items: center; gap: 1rem; justify-content: center;}
+.showcase .showcase-text .showcase-btn .btn1{
+    padding:1rem 2rem;
+    border-radius: 50px;
+    background-color: rgba(255, 166, 0, 0);
+    border-style: solid;
+    border-color: orange;
+    color: white;
+}
+.showcase .showcase-text .showcase-btn .btn1:hover{
+    background-color:orange;
+    color: #051922;
+}
+
+/* =========================================================================================================================== */
+
+.services {
+    background-color: whitesmoke;
+    padding: 3rem 0;
+}
+.services .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.services .container .item{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+}
+.services .container .item p{
+    font-weight: light;
+    color: gray;
+}
+
+/* =========================================================================================================================== */
+
+.products{
+    padding: 4rem 0;
+}
+.products .header{
+    text-align: center;
+    font-size: 3rem;
+    color: orange;
+    padding: 2rem 0;
+}
+.products .container .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .container .row .product{
+    padding: 1rem 1.5rem;
+    text-align: center;
+    box-shadow: 1px 1px 5px 7px #00000005;
+    width: 23rem;
+}
+.products .container .row .product:hover{
+    box-shadow: none;
+}
+.products .container .row .product h3{ font-size: 2.5rem; color: #051922;}
+.products .container .row .product button{background-color: orange; color: white; border-radius: 50px; border: none; padding: 1rem 2rem;}
+
+.products .container .border-products{
+    width: 30%;
+    margin: 1rem auto;
+    border-color: orange;
+}
+
+/* =========================================================================================================================== */
+
+.deal{background-color: whitesmoke; padding: 4rem 0;}
+.deal .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.deal .container .row .deal-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+}
+.deal .container .row .deal-img .offer{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    background: orange;
+    border-radius: 50px;
+    padding: 1rem;
+}
+.deal .container .row .deal-img .offer h4{
+    color: white;
+}
+.deal .container .row .deal-text h2{
+    font-size: 3rem;
+    color: #051922;
+}
+.deal .container .row .deal-text{width: 28rem; }
+.deal .container .row .deal-text .row{
+    display: flex;
+     gap: 1rem; 
+    justify-content: start;
+}
+.deal .container .row .deal-text .clock{
+    border: #051922;
+    border-style: solid;
+    text-align: center;
+    padding: 0.8rem;
+}
+.deal .container .row .deal-text .row{padding-top: 2rem; }
+.deal .container .row .deal-text button{
+    padding:1rem 2rem;
+    border-radius: 50px;
+    background-color:orange;
+    border-color: orange;
+    border-style: solid;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* =========================================================================================================================== */
+
+.review {padding: 5rem 0;}
+.review .container{text-align: center;}
+.review .container img{width: 100px; border-radius: 50px;}
+.review .container p{padding: 2rem 0; width: 80%; margin: auto;}
+
+/* =========================================================================================================================== */
+
+.about{padding: 3rem 0; background-color: whitesmoke;}
+.about .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about .container .row .vid{width: 25rem;}
+.about .container .row .text{width: 30rem;}
+.about .container .row .text h2{font-size: 3rem; color: #051922;} 
+.about .container .row .text p{color: gray; padding: 2rem 0;}
+.about .container .row .text button{
+    padding:1rem 2rem;
+    border-radius: 50px;
+    background-color:orange;
+    border-color: orange;
+    border-style: solid;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* =========================================================================================================================== */
+
+.discount{
+    background-image:url("https://images.pexels.com/photos/437807/pexels-photo-437807.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    padding: 4rem 0;
+}
+.discount .container h2{font-size: 3.5rem; color: orange;}
+.discount .container p span{font-size: 3.5rem; color: orange;}
+.discount .container button{
+    padding:1rem 2rem;
+    border-radius: 50px;
+    background-color:orange;
+    border-color: orange;
+    border-style: solid;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* =========================================================================================================================== */
+
+.news{
+    padding: 4rem 0;
+}
+.news .header{
+    text-align: center;
+    font-size: 3rem;
+    color: orange;
+    padding: 2rem 0;
+}
+.news .container .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news .container .row .item{
+    box-shadow: 1px 1px 5px 7px #00000005;
+    width: 23rem;
+}
+.news .container .row .item .text{
+    text-align: start;
+    padding: 1rem 2rem;
+    width: 23rem;
+}
+.news .container .row .item .text .icons{display: flex; gap: 1rem; padding: 1rem 0;}
+.news .container .row .item:hover{box-shadow: none;}
+.news .container .row .item .text a{font-weight: bold; text-decoration: none; padding: 1rem;}
+
+/* =========================================================================================================================== */
+
+.sponsers {background-color: whitesmoke; padding: 2rem 0;}
+.sponsers .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================================================================================================================== */
+
+.footer {
+    background-color: #051922;
+    padding: 3rem 0;
+}
+.footer .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.footer .container hr{
+    border-color: gray;
+}
+.footer .container .row .col{
+    width: 15rem;
+}
+.footer .container .row .col h2{
+    color: white;}
+.footer .container .row .col hr{
+    width: 30%;
+    border-color: orange;
+}
+.footer .container .row .col p{
+    color: gray;}
+.footer .container .row .col ul li{
+    list-style: none;}
+.footer .container .row .col ul li a{
+    color: whitesmoke;
+     text-decoration: none;}
+.footer .container .row .col ul li a:hover{
+    color: orange;}
